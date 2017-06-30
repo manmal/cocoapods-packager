@@ -31,6 +31,7 @@ module Pod
       platform_path = Pathname.new(platform.name.to_s)
       platform_path.mkdir unless platform_path.exist?
       build_library(platform, defines, platform_path + Pathname.new("lib#{@spec.name}.a"))
+      copy_resources(platform)
     end
 
     def build_framework(platform)

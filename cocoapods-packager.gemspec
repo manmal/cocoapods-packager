@@ -5,7 +5,7 @@ require 'cocoapods_packager.rb'
 
 Gem::Specification.new do |spec|
   spec.name = 'cocoapods-packager'
-  spec.version = Pod::Packager::VERSION
+  spec.version = Pod::Packager::VERSION + '.manmal'
   spec.authors = ['Kyle Fuller', 'Boris Bügling']
   spec.summary = 'CocoaPods plugin which allows you to generate a framework or static library from a podspec.'
   spec.homepage = 'https://github.com/CocoaPods/cocoapods-packager'
